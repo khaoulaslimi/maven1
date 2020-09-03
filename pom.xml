@@ -3,5 +3,15 @@
   <groupId>mv1</groupId>
   <artifactId>mv11</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <configuration>
+                  <archive>
+                    <manifest>
+
+                    <!-- give full qualified name of your main class-->
+                      <mainClass>mv11.HelloWorld</mainClass>
+
+                    </manifest>
+                  </archive>
+                </configuration>
   <name>HelloWorld</name>
 </project>
