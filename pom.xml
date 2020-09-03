@@ -4,7 +4,14 @@
   <artifactId>mv11</artifactId>
   <name>HelloWorld</name>
   <version>0.0.1-SNAPSHOT</version>
-   <configuration>
+  <build>
+    <plugins>
+      <plugin>
+        <!-- Build an executable JAR -->
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.0.5</version>
+        <configuration>
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
@@ -13,5 +20,7 @@
             </manifest>
           </archive>
         </configuration>
-  
+      </plugin>
+    </plugins>
+  </build>
 </project>
